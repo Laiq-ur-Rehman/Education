@@ -3,11 +3,15 @@
 <head>
     <title>My Educational Institute</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto&display=swap" rel="stylesheet">
+    
     <style>
-        body{
-            
+        #main{
+            border: 0px solid black;
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
         }
         body {
             font-family: 'Inter', sans-serif;
@@ -21,83 +25,97 @@
             background-position: center;
             backdrop-filter:blur(7px);
         }
-        
-        h1 {
+        #first ul{
+            margin-top: 0%;
+        }
+        #first li{
+            display: inline;
+        }
+        #first a{
+            display: inline-block;
+            padding: 10px;
+            float: left;
+            color: black;
+            text-decoration: none;
+            margin-top: 0%;
+        }
+        #first a:hover{
+            color: #ff0000;
+        }
+        #second ul{
+            margin-top: 0%;
+        }
+        #second li{
+            display: inline;
+        }
+        #second a{
+            display: inline-block;
+            padding: 10px;
+            float: right;
+            color: black;
+            text-decoration: none;
+            margin-right: 10px;  
+            margin-top: 0%;       
+        }
+        #second a:hover{
+            color: #fd0000;
+        }
+        #header h1{
             color: #ffffff;
             font-size: 50px;
             text-shadow: -2px -2px 5px #333333;
             padding: 20px;
             text-align: center;   
         }
-        
-        nav {
+        nav{
             background-color:transparent;
             color: #ffffff;
             padding: 10px;
             float: right;
         }
-        
-        nav ul {
+        nav ul{
             list-style-type: none;
             margin: 0;
             padding: 0;
             text-align: center;
         }
-        
-        nav ul li {
+        nav ul li{
             display: inline;
             margin-right: 10px;
         }
-        
-        nav ul li a {
+        nav ul li a{
             color: #ffffff;
             text-decoration: none;
             padding: 5px;
         }
-        
-        section {
+        nav ul li a:hover{
+            color: #ffffff;
+            background-color: black;    
+        }
+        section{
             padding: 20px;
             margin-left:40px;
             font-weight:900;
         }
-        h3{
+        img{
+            margin-left: 60px;
+        }
+        section h3{
             color: #ffffff;
             font-weight:900;
             font-style: italic;
         }
-        
-        footer {
-            background-color: #333333;
-            color: #ffffff;
-            padding: 10px;
-            text-align: center;
-        }
-        
-        #first
-        {
-            border: 0px solid #444343;
-            margin: 10px 10px 10px 50px;
-            float: left;
-        }
-        
-        #second
-        {
-            border: 0px solid #a19e9e;
-            margin: 10px 10px 10px 50px;
-            float: right;
-        }
-        
-        img
-        {
-            margin-left: 60px;
-        }
-        
-        h2{
-            font-size: 50px;
+        section h1{
+            margin-bottom: 0%;
             margin-top: 0%;
+            padding:0px 0px 5px 0px;
+            font-size: 50px;
+            color: #ffffff;
+            text-shadow: none; 
+            font-style: italic;
+            text-align: left;
         }
-        
-        p{
+        section p{
             margin-top: 0%;
             color: #ffffff;
             border-bottom: 2px solid gold; 
@@ -105,70 +123,89 @@
             width: fit-content;
             padding-bottom: 10px;
         }
-        
-        #mission{
+        #mission p{
             width: 600px;
             border: opx solid red;
             font-style: italic;
             font-size: 20px;
             color: #ffffff;
+            line-height: normal;
+            margin-left: 60px;
+        }
+        footer {
+            background-color: #333333;
+            color: #ffffff;
+            padding: 10px;
+            text-align: center;
+        }
+        @media screen and (max-width:1200px) {
+            #main{
+                width: 800px;
+            }
+        }
+        @media screen and (max-width:600px) {
+            #main{
+                width: 150px;
+            }
+            #mission{
+                width: 200px;
+            } 
         }
     </style>
 </head>
 <body>
+<div id="main">
     <div id="first">
-    <p1><a href="#" style="text-decoration: none;">online payment</a></p1>&nbsp;&nbsp;&nbsp;
-    <p2><a href="#" style="text-decoration: none;">Enroll Now</a></p2>&nbsp;&nbsp;&nbsp;
-    <p3><a href="#" style="text-decoration: none;">Global Reach</a></p3>&nbsp;&nbsp;&nbsp;
-    <p4><a href="#" style="text-decoration: none;">Alumni</a></p4>&nbsp;&nbsp;&nbsp;
-    <p5><a href="#" style="text-decoration: none;">LMS</a></p5>&nbsp;&nbsp;&nbsp;
-    <p6><a href="#" style="text-decoration: none;">Contact Us</a></p6>
+        <a href="#">online payment</a>
+        <a href="#">Enroll Now</a>
+        <a href="#">Global Reach</a>
+        <a href="#">Alumni</a>
+        <a href="#">LMS</a>
+        <a href="#">Contact Us</a>
+    </div>
     
-</div>
-<div id="second">
-    <p7><a href="mailto:l.info@rootsinternational.edu.pk" style="text-decoration: none;">info@rootsinternational.edu.pk</a></p7>&nbsp;&nbsp;&nbsp;
-    <i class="fa-solid fa-phone"></i>
-    <p8><a href="#" style="text-decoration: none;"><i class="fa fa-phone"></i>051 111-724-111</a></p8>&nbsp;&nbsp;&nbsp;
-</div>
-    <hr width="100%" size="2">
-   
+    <div id="second">
+        
+        <a href="#">051 111-724-111</a>
+        <a href="mailto:info@rootsinternational.edu.pk">info@rootsinternational.edu.pk</a>
+        
+    </div>
+     
+        <hr width="100%" size="2">
+    
+    <div id="header">
         <h1>Roots International School</h1>
- 
-<div id="Third">
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Qualifications</a></li>
-            <li><a href="#">Events</a></li>
-            <li><a href="#">Knowledge Hub</a></li>
-            <li><a href="#">Support Center</a></li>
-            <li><a href="#">Campuses</a></li>
-        </ul>
-    </nav>
-</div>
-<img src="C:\Users\Mega Providers\Desktop\Git\Roots.png" width="300px" alt="Roots International School" title="Roots International School">
+    </div>
+
+    <div id="Third">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Qualifications</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Knowledge Hub</a></li>
+                <li><a href="#">Support Center</a></li>
+                <li><a href="#">Campuses</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <img src="C:\Users\Mega Providers\Desktop\Git\Roots.png" width="300px" alt="Roots International School" title="Roots International School">
+    
     <section>
         <h3>ACHIEVING GLOBAL DISTINCTIONS VIA</h3>
-        <h1 style="margin-bottom: 0%;margin-top: 0%;padding:0px 0px 5px 0px;font-size: 50px;color: #ffffff;text-shadow: none; font-style: italic;text-align: left;">Excellence In Education</h1>
+        <h1>Excellence In Education</h1>
         <p> circa 1988.</p>
     </section>
 
-    <section>
-        <div id="mission">“Our mission is to inspire students not only intellectually but also spiritually, through participation in a well integrated life at Roots International Schools & Colleges.”</div>
-        <h4>Courses Offered</h4>
-        <ul>
-            <li>Course 1</li>
-            <li>Course 2</li>
-            <li>Course 3</li>
-            <li>Course 4</li>
-        </ul>
-    </section>
-    
-    
+    <div id="mission">
+        <p>“Our mission is to inspire students not only intellectually but also spiritually, through participation in a well integrated life at Roots International Schools & Colleges.”</p>
+    </div>
 
     <footer>
         <p>&copy; 2023 My Educational Institute. All rights reserved.</p>
     </footer>
+</div>
 </body>
 </html>
