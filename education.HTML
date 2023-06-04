@@ -129,23 +129,139 @@
             font-style: italic;
             font-size: 20px;
             color: #ffffff;
+            margin: auto;
+            float: left;
+            height: 450px;
+            padding: 200px 20px 200px 20px;
+            box-sizing: border-box;
+        }
+        #News{
+            border: 1px solid white;
+            width: 300px;
+            float: right;
+            background-color: rgb(143, 143, 114);;
+            margin: 5px;
+            height: 450px;
+        }
+        #News h1{
+            font-size: 20px;
+            text-decoration: underline solid gold;
+            text-underline-offset: 10px;
             line-height: normal;
-            margin-left: 60px;
+            padding-bottom: 5px;
+            text-align: center;
+        }
+        #News li{
+            padding: 10px;
+        }
+        #News li a{
+            text-decoration: none;
+            color: black;
+        }
+        #News li a:hover{
+            color: #fd0000;
+        }
+        #calendar{
+            border: 1px solid white;
+            width: 300px;
+            float: right;
+            background-color: rgb(143, 143, 114);
+            margin: 5px;
+            height: 450px;
+        }
+        #calendar h1{
+            font-size: 20px;
+            text-decoration: underline solid gold;
+            text-underline-offset: 10px;
+            line-height: normal;
+            padding-bottom: 5px;
+            text-align: center;
+        }
+        #calendar p{
+            padding: 20px;
+            list-style-type: none;
+        }
+        #testimonial{
+            border: opx solid black;
+            width: 300px;
+            clear: both;
+            float :left;
+            height : 200px;
+            background-color: rgba(10, 73, 190, 0.5);
+            padding:80px 55px 80px 45px;
+            box-sizing: border-box;
+            margin: 10px; 
+        }
+        #testimonial a{
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            font-size: 40px;   
+        }
+        #tour{
+            border: opx solid black;
+            width: 300px;
+            float: left;
+            height : 200px;
+            background-color: rgba(10, 73, 190, 0.5);
+            padding:80px 10px 80px 45px;
+            box-sizing: border-box;
+            margin: 10px;
+        }
+        #tour a{
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            font-size: 40px;
+        }
+        #student{
+            border: opx solid red;
+            background-color: rgba(10, 73, 190, 0.5);
+            color: #ffffff;
+            font-size: 40px;
+            width: 600px;
+            height : 200px;
+            float: right;
+            box-sizing: border-box;
+            margin: 10px;
+            text-transform: capitalize;
+            text-align: center;
+        }
+        #student button{
+            background-color: #ff0000;
+            height: 80px;
+            width: 300px;
+            font-size: 24px;
+            border-radius: 10px;
+            position: relative;
+            bottom: 20px;
+        }
+        #student button a{
+            text-decoration: none;
+            color: black;
+        }
+        #student button a:hover{
+            background-color: #424242;
+            color: rgb(255, 255, 255);
         }
         footer {
             background-color: #333333;
             color: #ffffff;
             padding: 10px;
             text-align: center;
+            clear: both;
         }
         @media screen and (max-width:1200px) {
             #main{
-                width: 800px;
+                width: 1100px;
+            }
+            #mission{
+                width: 400px;
             }
         }
         @media screen and (max-width:600px) {
             #main{
-                width: 150px;
+                width: 550px;
             }
             #mission{
                 width: 200px;
@@ -200,7 +316,41 @@
     </section>
 
     <div id="mission">
-        <p>“Our mission is to inspire students not only intellectually but also spiritually, through participation in a well integrated life at Roots International Schools & Colleges.”</p>
+        <p class="motive">“Our mission is to inspire students not only intellectually but also spiritually, through participation in a well integrated life at Roots International Schools & Colleges.”</p>
+    </div>
+    <div id="calendar">
+        <h1>Activity Calendar</h1>
+            <p>Early Year Graduation Ceremony at Kingwood campus<br>
+                Date : Tuesday May 30 , 2023<br>
+                Venue: Karachi School of Business & Leadership<br>
+                National Stadium Road, Opp. Liaquat National Hospital, Karachi</p>
+            <p>Early Year Graduation Ceremony at Hamilton campus<br>
+                Date : Wednesday May 31 , 2023<br>
+                Venue: Karachi School of Business & Leadership<br>
+                National Stadium Road, Opp. Liaquat National Hospital, Karachi</p>
+    </div>
+    
+    <div id="News">
+        <h1>News & Updates</h1>
+        <ul>
+            <li><a href="#">May 16, 2023: Students from RISC attended an insightful session organized by Rawalpindi Chamber of Commerce & Industries</a></li>
+            <li><a href="#">April 13, 2023, RISC & NIC enter into agreement</a></li>
+            <li><a href="#">RISC & ICCI ink MoU on April 11 2023</a></li>
+            <li><a href="#"> April 10, 2023: RISC celebrates 35th anniversary with alumni and distinguished professionls.</a></li>
+        </ul>
+    </div>
+
+    <div id="testimonial">
+        <a href="#">Testimonials</a>
+    </div>
+
+    <div id="tour">
+        <a href="#">Virtual Tour</a>
+    </div>
+
+    <div id="student">
+        <p>Become a student at RISC</p>
+        <button type="button" value="button"><a href="#" class="button">Apply for Admission</a></button>
     </div>
 
     <footer>
