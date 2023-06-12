@@ -76,15 +76,12 @@
         }
         nav ul{
             list-style-type: none;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            display: inline-block;
+            display: flex;
             float: right;
         }
         nav ul li{
-            display: inline;
-            margin-right: 10px; 
+            margin-right: 10px;
+            position: relative; 
         }
         nav ul li a{
             color: #ffffff;
@@ -95,26 +92,21 @@
             color: #ffffff;
             background-color: black;    
         }
-        nav ul li ul{
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            
-        }
-        nav ul li ul li{
+        .dropdown-menu {
             display: none;
         }
-        nav ul li:hover ul li{
+        nav ul li:hover .dropdown-menu {
+            display: block;
+            position: absolute;
+            background-color: transparent;   
+        }
+        nav ul li:hover .dropdown-menu ul{
             display: block;
             margin: 5px;
-            clear: both;
-            position: relative;
-            
         }
-        nav ul li:hover ul li a:hover{
-            color: #ffffff;
-            background-color: black;
+        nav ul li:hover .dropdown-menu ul li{
+            min-width: 50px;
+            padding: 5px;
         }
         section{
             padding: 20px;
@@ -163,9 +155,6 @@
             padding: 140px 10px 200px 20px;
             box-sizing: border-box;
             text-align: center;
-            /*flex-direction: column;
-            align-content: center;
-            justify-content: center;*/
         }
         #News{
             border: 1px solid white;
@@ -326,22 +315,28 @@
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">About us</a>
-                    <ul>
-                    <li><a href="#">link 1</a></li>
-                    <li><a href="#">link 2</a></li>
-                    <li><a href="#">link3</a></li>
-                    <li><a href="#">link4</a></li>
-                    <li><a href="#">link5</a></li>
-                </ul></li>
+                <li><a href="#">About us</a><i class="fas fa-caret-right"></i>
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li><a href="#">link 1</a></li>
+                            <li><a href="#">link 2</a></li>
+                            <li><a href="#">link3</a></li>
+                            <li><a href="#">link4</a></li>
+                            <li><a href="#">link5</a></li>
+                        </ul>
+                    </div>
+                </li>
                 <li><a href="#">Qualifications</a>
-                 <ul>
-                    <li><a href="#">link 1</a></li>
-                    <li><a href="#">link 2</a></li>
-                    <li><a href="#">link3</a></li>
-                    <li><a href="#">link4</a></li>
-                    <li><a href="#">link5</a></li>
-                </ul></li>
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li><a href="#">link 1</a></li>
+                            <li><a href="#">link 2</a></li>
+                            <li><a href="#">link3</a></li>
+                            <li><a href="#">link4</a></li>
+                            <li><a href="#">link5</a></li>
+                        </ul>
+                    </div>
+                </li>
                 <li><a href="#">Events</a></li>
                 <li><a href="#">Knowledge Hub</a></li>
                 <li><a href="#">Support Center</a></li>
